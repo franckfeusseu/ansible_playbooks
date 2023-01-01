@@ -1,0 +1,3 @@
+[lan]
+centoslaptop ansible_user=ffesse
+kalilaptop ansible_user=franck

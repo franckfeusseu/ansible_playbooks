@@ -1,0 +1,12 @@
+---
+- name: Simple playbook
+  hosts: lan
+  become: false
+  tasks:
+    - name: Show a message
+      debug:
+        msg: "hello world !"
+
+    - name: Get os release
+      debug:
+        msg: "the value of release is {{lookup('file', '/etc/os-release' )}}"
